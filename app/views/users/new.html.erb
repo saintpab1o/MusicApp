@@ -1,0 +1,16 @@
+<h1>Open Mic Sign ups!</h1>
+
+<form action="<%= users_url %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="user[email]" value="">
+    
+    <p>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="user[password]" value="">
+    </p>
+    <p>
+    <input type="submit" value="Signup">
+    </p>
+</form> 
+
